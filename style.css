@@ -5,9 +5,69 @@
 
 body{
     background-color: #BBE2EC;
+    overflow-x: hidden;
 }
 
 nav h2{
     color:#fff;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+.sec1 {
+   position: relative;
+   background:url(./images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg);
+   height:30rem;
+   width:30rem;
+   top:7rem;
+   left:49rem;
+   background-size:cover;
+   display: flex;
+   justify-content: center;
+   background-position: center;
+   border-radius:20px;
+}
+
+.signin{
+    position: relative;
+    width: 50rem;
+    height: 10rem;
+    scale:0.85;
+    opacity: 0.85;
+    backdrop-filter: blur(20px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+}
+.img {
+    position: relative;
+    z-index: -1;
+    top:25rem;
+    height:120%;
+    width:100%;
+}
+hr{
+    width:88%;
+    position: absolute;
+    left:6%;
+    top:47rem;
+}
+p{
+    position: absolute;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sec2{
+    position: absolute;
+    height:10rem;
+    width:10rem;
+    border:50%;
+}
+@media only screen and (max-width:768px){
+    nav{
+        margin-left:10%;
+    }
+    .signin{
+        margin-right:20%;
+        height:auto;
+        width:auto;
+    }
+};
+
+
