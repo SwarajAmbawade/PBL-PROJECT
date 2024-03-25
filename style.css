@@ -59,6 +59,33 @@ p{
     width:10rem;
     border:50%;
 }
+
+.circle{
+    height:35rem;
+    width:35rem;
+    border-radius:50%;
+    position: absolute;
+    left:7rem;
+    top:7rem;
+    background-color:#A8A8A8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circlepara{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.15rem;
+    font-weight: 600;
+}
+
+.sec2{
+    height:30rem;
+    background-color: black;
+    top:13rem;
+    width:85%;
+    left:7%;
+}
 @media only screen and (max-width:768px){
     nav{
         margin-left:10%;
