@@ -4,8 +4,13 @@
 }
 
 body{
-    background-color: #BBE2EC;
+    background-color:#BBE2EC;
     overflow-x: hidden;
+}
+
+nav{
+    width:100%;
+    background-color: #40A2E3;
 }
 
 nav h2{
@@ -17,7 +22,7 @@ nav h2{
    background:url(./images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg);
    height:30rem;
    width:30rem;
-   top:7rem;
+   top:10rem;
    left:49rem;
    background-size:cover;
    display: flex;
@@ -53,13 +58,10 @@ p{
     position: absolute;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.sec2{
-    position: absolute;
-    height:10rem;
-    width:10rem;
-    border:50%;
+.line{
+    position: relative;
+    top:70rem;
 }
-
 .circle{
     height:35rem;
     width:35rem;
@@ -67,10 +69,11 @@ p{
     position: absolute;
     left:7rem;
     top:7rem;
-    background-color:#A8A8A8;
+    background-color:#000080;    ;
     display: flex;
     justify-content: center;
     align-items: center;
+    color:#fff;
 }
 
 .circlepara{
@@ -81,8 +84,7 @@ p{
 
 .sec2{
     height:30rem;
-    background-color: black;
-    top:13rem;
+    top:15rem;
     width:85%;
     left:7%;
 }

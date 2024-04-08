@@ -1,12 +1,26 @@
-.container {
+.main_container {
     background-color: #caffb6;
     border-radius: 5px;
-    padding: 20px;
-    width: 20rem;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    width:10rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);  
     justify-content: center;
     margin: 100px;
+    padding-left:10rem;
 }
 body{
     background-color: #BBE2EC;
+}
+nav{
+    width:100%;
+    background-color: #40A2E3;
+}
+.container>img{
+    position: absolute;
+    border-radius: 50%;
+    height:20rem;
+    width:20rem;
+    top:12rem;
+    left:12rem;
 }

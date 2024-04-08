@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.form{
+    height:20rem;
+    width:80%;
+    position: relative;
+    left:10%;
+    top:7rem;
+}
+
+form{
+    background-color: #BBE2EC;
+    padding:2rem;
+    border-radius:1rem;
+}
+nav{
+    background-color:#40A2E3 ;
+    width:100%;
+}
