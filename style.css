@@ -88,6 +88,14 @@ p{
     width:85%;
     left:7%;
 }
+
+footer{
+    margin-top:30rem;
+    background-color: #40A2E3;
+    width:85%;
+    left:6rem;
+    border-radius:2rem;
+}
 @media only screen and (max-width:768px){
     nav{
         margin-left:10%;

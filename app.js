@@ -1,9 +1,11 @@
-let btn = document.getElementById("user-menu-button")
-let dropdown = document.querySelector("#dropdown")
-btn.addEventListener('click',function(){
-    btn.style.display = "";
-})
-
-function click(){
-    
-}
+gsap.from("#sec_2 h1",{
+    opacity:0,
+    duration:1,
+    scrollTrigger:{
+        trigger:"#sec_2 h1",
+        scroller:"body",
+        start:"top 60%",
+        end:"bottom top",
+        markers:true,
+    }
+});
