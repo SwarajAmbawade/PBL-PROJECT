@@ -2,15 +2,19 @@
     margin-left: 40px;
     /* background:url("./images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg"); */
     background-size:cover;
-    background-color: #caffb6;
+    background-color: #d3ffc3;
     background-repeat: no-repeat;
     position: relative;
     border-radius: 25px;
     height:43rem;
     width:2rem;
     top:3rem;
+    left:3rem;
     margin-bottom:5rem;
     padding-left:13rem;
+}
+body{
+    background-color: white;
 }
 .form{
     margin-top:-5rem;

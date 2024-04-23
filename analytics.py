@@ -1,40 +1,22 @@
 import csv
 import pandas as pd
+import matplotlib.pyplot as plt
 
-# def read_data_from_csv(filename):
-#     data = []
-#     with open("data.csv", 'r', newline='') as file:
-#         reader = csv.reader(file)
-#         for row in reader:
-#             data.append(row)
-#     return data
 
-# def generate_html_table(data):
-#     html_table = "<table border='1'>"
-#     for row in data:
-#         html_table += "<tr>"
-#         for col in row:
-#             html_table += "<td>{}</td>".format(col)
-#         html_table += "</tr>"
-#     html_table += "</table>"
-#     return html_table
 
-# if __name__ == "__main__":
-#     # Read data from CSV file
-#     data = read_data_from_csv("data.csv")
-    
-#     # Generate HTML table
-#     html_table = generate_html_table(data)
-#     df = pd.DataFrame("data.csv")
-#     # Write HTML content to file
-#     with open("analytics.html", "w") as f:
-#         f.write("<html><head><title>Data Display</title></head><body>")
-#         f.write("<h1>CSV Data Display</h1>")
-#         f.write(df[0])
-#         f.write("</body></html>")
+df = pd.read_csv('diabetes.csv')
 
-import csv
+row = df.columns
+col = df.iloc[[2],[1,2,3,4,5]]
+new_var = pd.Series(col.all)
 
+
+# s = pd.Series(col)
+fig, ax = plt.subplots()
+new_var.plot.bar()
+fig.savefig('my_plot.png')
+
+print(new_var)
 def read_element_from_csv(filename, row_index, col_index):
     with open("data.csv", 'r', newline='') as file:
         reader = csv.reader(file)
@@ -45,7 +27,7 @@ def read_element_from_csv(filename, row_index, col_index):
 
 if __name__ == "__main__":
     # Choose the element's position (row and column index)
-    row_index = 2  # Index of the row
+    row_index = 102  # Index of the row
     col_index = 0  # Index of the column
     
     # Read the element from the CSV file
@@ -53,8 +35,10 @@ if __name__ == "__main__":
     
     # Write HTML content to file 
     with open("analytics.html", "w") as f:
-        f.write("<html><head><title>Data Display</title><style>h1{color:blue;margin-left:10rem}</style></head><body>")
+        f.write("<html><head><title>Data Display</title><style>h1{color:blue;position:relative;left:35rem;font-size:2rem;}p{font-size:2rem}body{background-color:#BBE2EC;overflow-x:hidden}</style></head><body>")
         f.write("<h1>Analytics</h1>")
-        f.write("<p>row:{} column:{} Name:{}</p>".format(row_index, col_index, element))
+        f.write("<p>Name: {}</p>".format(element))
+        f.write("<img src=""my_plot.png></img>")
         f.write("</body></html>")
+
 
