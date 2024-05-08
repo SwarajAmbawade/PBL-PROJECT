@@ -35,8 +35,9 @@
                   <a href="./index.html" class="bg-white-900 text-white rounded-md px-3 py-2.5 text-lg font-bold" aria-current="page">Home</a>
                   <a href="./analytics.html" class="text-white-300 hover:bg-blue-800 hover:text-white rounded-md px-3 py-3 text-base font-medium">Analytics</a>
                   <a href="./aboutus.html" class="text-white-300 hover:bg-blue-800 hover:text-white rounded-md px-3 py-3 text-base font-medium">About us</a>
-                  <a href="./createProfile.html" class="text-white-300 hover:bg-blue-800 hover:text-white rounded-md px-3 py-3 text-base font-medium">Create Profile</a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdu2ppS8vyD_ueisgk-h26C4a2ZyInQBfqRXao1qtKeF34e8w/viewform?embedded=true&edit2=2_ABaOnuezcXDPDOPxIItd2AS08jEZ_EKPt6oY8Dm-ne5AIHdeTYq_y1llSzhbkk8W9Q" class="text-white-300 hover:bg-blue-800 hover:text-white rounded-md px-3 py-3 text-base font-medium">Create Profile</a>
                   <a href="./Feedback.html" class="text-white-300 hover:bg-blue-800 hover:text-white rounded-md px-3 py-3 text-base font-medium">Feedback</a>
+                  <a href="profile.html" class="text-white-300 hover:bg-blue-800 hover:text-white rounded-md px-3 py-3 text-base font-medium">Profile</a>
                 </div>
               </div>
             </div>
@@ -45,8 +46,8 @@
       
               <!-- Profile dropdown -->
               <div class="relative mt-3" id="dropdown">
-                <div>
-                  <button type="button" class="relative flex rounded-full bg-black text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" onclick="click()" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                <div class="btn" onclick="show()"> 
+                  <button type="button" class="relative flex rounded-full bg-black text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"  id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                     <span class="absolute -inset-1.5"></span>
                     <span class="sr-only">Open user menu</span>
                     <i class="fa-solid fa-user p-3 font-semibold" style="color: #ffffff;"></i>
@@ -63,7 +64,7 @@
                     From: "transform opacity-100 scale-100"
                     To: "transform opacity-0 scale-95"
                 -->
-                <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden" role="menu" aria-orientation="vertical" onclick="click()" aria-labelledby="user-menu-button" tabindex="-1" id="ic-log">
+                <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden index-100" role="menu" aria-orientation="vertical"  aria-labelledby="user-menu-button" onclick="show()" tabindex="-1" id="ic-log">
                   <!-- Active: "bg-gray-100", Not Active: "" -->
                   <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
                   <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
@@ -85,6 +86,7 @@
           </div>
         </div>
     </nav>
+    <div id="main"><div id="cursor"></div></div>
     <div class="circle"><p class="circlepara"><span style="margin-left:8rem">"Empowering Health,</span><br><span>Ensuring Safety: Your Lifesaving Medical Data   </span><br><span style="margin-left:8rem">at Your Fingertips."</span></p></div>
     <div class="sec1 relative">
       <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8 signin">
@@ -142,6 +144,7 @@
         In emergency conditions, carrying the files, doing medical tests cost a lot of time, loss of money, and sometimes can compromise the health of the patient.
         <b style="color:green">Medikeeps</b> is the best solution to these problems. You can store all your medical history in just one click, and can save your and other’s lives in emergency situations.</p>
     </div>
+    <div id="logoname"><h1>MediKeeps</h1></div>
     <hr class="h-0.5 line absolute border-0 bg-black">
     <div class="footer"><!-- component -->
       <footer class="relative py-20 flex flex-col items-center justify-center overflow-hidden md:py-25">
@@ -294,8 +297,8 @@
       }
       --></div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="app.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </html>
