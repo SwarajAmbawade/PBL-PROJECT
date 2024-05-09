@@ -129,7 +129,7 @@ footer{
 #logoname{
     height:55vw;
     width:100%;
-    background-color: white;
+    background-color: transparent;
     position:relative;
     top:23rem;
     font-size:50rem;
@@ -142,8 +142,15 @@ footer{
     left:75rem;
     top:-2rem;
     font-weight: 600;
-    color:#40A2E3;
+    color:#004472;
 }
+#user-menu-button{
+    z-index: 100;
+}
+#user-menu-button i:hover #ic-log{
+    left:0;
+}
+
 @media only screen and (max-width:768px){
     nav{
         margin-left:10%;

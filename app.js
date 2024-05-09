@@ -3,7 +3,7 @@ var cursor = document.querySelector("#cursor");
 var main = document.querySelector("body");
 const logo = document.querySelector(".btn");
 const dropdown = document.querySelector("#ic-log");
-
+const btn = document.querySelector("#dropdown")
 
 gsap.from("nav",{
     opacity:0,
@@ -27,7 +27,7 @@ gsap.to("#logoname h1",{
         scroller:"body",
         start:"top 5%",
         end:"top -100%",
-        scrub:2,
+        scrub:1,
         pin:true,
     }
 })
@@ -48,6 +48,9 @@ logo.addEventListener("onclick",()=>{
     })
 })
 
-function show(){
-    dropdown.style.overflow = "visible";
-};
+btn.addEventListener("onclick",()=>{
+    gsap.to(dropdown,{
+        left:"-40rem"
+    })
+})
+
